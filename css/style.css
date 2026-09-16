@@ -76,11 +76,12 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;color:inherit
   position:relative;min-height:100svh;display:flex;align-items:center;
   padding:calc(var(--head-h) + 40px) 0 80px;background:var(--bg);overflow:hidden;
 }
-.hero::before{ /* PDF 표지의 둥근 파란 판 */
-  content:'';position:absolute;top:0;left:0;width:46%;height:100%;
+.hero::before{ /* PDF 표지의 둥근 파란 판 — 글 전체를 넉넉히 덮는 폭 */
+  content:'';position:absolute;top:0;left:0;width:calc(50% + 120px);height:100%;
   background:var(--blue);border-radius:0 0 190px 0;
 }
-@media (max-width:1024px){ .hero::before{width:100%;height:58%;border-radius:0 0 110px 0;} }
+/* 좁은 화면에선 판이 글보다 짧아질 수 있으니 통째로 덮는다 */
+@media (max-width:1024px){ .hero::before{width:100%;height:100%;border-radius:0 0 110px 0;} }
 
 .hero__in{position:relative;z-index:1;}
 .hero__txt{max-width:720px;color:#fff;}
@@ -104,11 +105,11 @@ button{font-family:inherit;border:0;background:none;cursor:pointer;color:inherit
 
 .hero__down{
   position:absolute;left:50%;bottom:30px;transform:translateX(-50%);
-  font-size:13px;letter-spacing:.2em;color:var(--gray);
+  font-size:13px;letter-spacing:.2em;color:rgba(255,255,255,.85);
   writing-mode:vertical-rl;padding-bottom:46px;
 }
 .hero__down::after{
-  content:'';position:absolute;left:50%;bottom:0;width:1px;height:36px;background:var(--gray);
+  content:'';position:absolute;left:50%;bottom:0;width:1px;height:36px;background:rgba(255,255,255,.85);
   animation:down 1.8s infinite;
 }
 @keyframes down{0%{opacity:0;transform:translateY(-14px);}40%{opacity:1;}100%{opacity:0;transform:translateY(8px);}}
