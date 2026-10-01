@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>속초 가족여행 일정표</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Apple SD Gothic Neo", "Pretendard", sans-serif;
+    background: #f0f4f8;
+    color: #1f2d3d;
+    font-size: 17px;
+    line-height: 1.6;
+    padding-bottom: 40px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 14px; }
+
+  header {
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    color: #fff;
+    text-align: center;
+    padding: 36px 16px 28px;
+    border-radius: 0 0 24px 24px;
+  }
+  header h1 { font-size: 26px; margin-bottom: 8px; }
+  header p { font-size: 16px; opacity: .95; }
+  header .sub { margin-top: 10px; font-size: 14px; background: rgba(255,255,255,.18); display: inline-block; padding: 6px 14px; border-radius: 999px; }
+  header .sub a { color: #fff; text-decoration: underline; }
+
+  .day {
+    background: #fff;
+    border-radius: 18px;
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(21,101,192,.08);
+  }
+  .day-head { padding: 14px 18px; color: #fff; font-size: 19px; font-weight: 700; }
+  .d1 .day-head { background: #1e88e5; }
+  .d2 .day-head { background: #2e7d32; }
+  .d3 .day-head { background: #ef6c00; }
+  .day-head small { display: block; font-size: 13px; font-weight: 400; opacity: .9; }
+
+  .item { display: flex; padding: 14px 16px; border-bottom: 1px solid #eef2f6; }
+  .item:last-child { border-bottom: none; }
+  .time {
+    flex: 0 0 74px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #456;
+    padding-top: 2px;
+  }
+  .what { flex: 1; }
+  .what b { font-size: 17px; }
+  .what .note { font-size: 14px; color: #5a6b7c; margin-top: 2px; }
+  .meal { background: #fff8ec; }
+  .meal .time { color: #b26a00; }
+
+  a.map {
+    color: #1565c0;
+    text-decoration: none;
+    border-bottom: 2px solid #90caf9;
+  }
+  .meal a.map { color: #b26a00; border-bottom-color: #ffcc80; }
+  a.map::after { content: " 📍"; font-size: 13px; }
+
+  .box {
+    background: #fff;
+    border-radius: 16px;
+    margin-top: 20px;
+    padding: 16px 18px;
+    box-shadow: 0 2px 10px rgba(21,101,192,.08);
+  }
+  .box h2 { font-size: 17px; margin-bottom: 8px; color: #1565c0; }
+  .box ul { list-style: none; }
+  .box li { padding: 4px 0 4px 2px; font-size: 15px; }
+  .box li::before { content: "· "; color: #1565c0; font-weight: 700; }
+  .warn h2 { color: #c62828; }
+  .warn li::before { color: #c62828; }
+
+  footer { text-align: center; margin-top: 26px; font-size: 13px; color: #8a9aa9; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌊 속초 가족여행</h1>
+  <p>2026. 10. 3 (토) ~ 10. 5 (월) · 2박 3일 · 자차</p>
+  <div class="sub">숙소 : <a href="https://map.naver.com/p/search/%EC%86%8D%EC%B4%88%EB%94%94%EC%98%A4%EC%85%98%EC%9E%90%EC%9D%B4">속초 디오션자이</a> (동명동 장안로 31)</div>
+</header>
+
+<div class="wrap">
+
+  <!-- 1일차 -->
+  <section class="day d1">
+    <div class="day-head">1일차 · 10/3 토요일 <small>바다와 대관람차</small></div>
+    <div class="item">
+      <div class="time">9:00</div>
+      <div class="what"><b>병점 출발</b>
+        <div class="note">연휴 낮이라 4시간 안팎 예상 · 휴게소 1회 (간식 추천)</div></div>
+    </div>
+    <div class="item meal">
+      <div class="time">13:00</div>
+      <div class="what"><b>🍴 점심 · <a class="map" href="https://map.naver.com/p/search/%EC%86%8D%EC%B4%88%EA%B4%80%EA%B4%91%EC%88%98%EC%82%B0%EC%8B%9C%EC%9E%A5">속초관광수산시장</a></b>
+        <div class="note"><a class="map" href="https://map.naver.com/p/search/%EB%A7%8C%EC%84%9D%EB%8B%AD%EA%B0%95%EC%A0%95%20%EC%86%8D%EC%B4%88">만석닭강정</a>(순살 한 통 19,000원쯤) + 오징어순대 · 씨앗호떡 · 막걸리빵</div></div>
+    </div>
+    <div class="item">
+      <div class="time">15:00</div>
+      <div class="what"><b>체크인 → <a class="map" href="https://map.naver.com/p/search/%EC%86%8D%EC%B4%88%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5">속초해수욕장</a></b>
+        <div class="note">숙소는 동명동이라 해수욕장까지는 차로 잠깐 이동</div></div>
+    </div>
+    <div class="item">
+      <div class="time">해질녘</div>
+      <div class="what"><b><a class="map" href="https://map.naver.com/p/search/%EC%86%8D%EC%B4%88%EC%95%84%EC%9D%B4%20%EB%8C%80%EA%B4%80%EB%9E%8C%EC%B0%A8">속초아이 대관람차</a></b>
+        <div class="note">초등학생도 어른 요금 · 네 식구 48,000원 · 운행 여부 전날 확인</div></div>
+    </div>
+    <div class="item meal">
+      <div class="time">저녁</div>
+      <div class="what"><b>🍴 저녁 · <a class="map" href="https://map.naver.com/p/search/88%EC%83%9D%EC%84%A0%EA%B5%AC%EC%9D%B4%20%EC%86%8D%EC%B4%88">88생선구이</a></b>
+        <div class="note">같은 동명동이라 가까움 · 테이블 숯불에 모둠 생선구이</div></div>
+    </div>
+  </section>
+
+  <!-- 2일차 -->
+  <section class="day d2">
+    <div class="day-head">2일차 · 10/4 일요일 <small>설악산 + 영랑호 자전거</small></div>
+    <div class="item">
+      <div class="time">8시대</div>
+      <div class="what"><b><a class="map" href="https://map.naver.com/p/search/%EC%84%A4%EC%95%85%EC%BC%80%EC%9D%B4%EB%B8%94%EC%B9%B4">설악산 권금성 케이블카</a></b>
+        <div class="note">왕복 어른 16,000원 · 초등생 12,000원 · 일찍 가야 덜 기다려요</div></div>
+    </div>
+    <div class="item">
+      <div class="time">오전</div>
+      <div class="what"><b><a class="map" href="https://map.naver.com/p/search/%EC%86%8D%EC%B4%88%20%EC%8B%A0%ED%9D%A5%EC%82%AC">신흥사</a> 둘러보기</b>
+        <div class="note">천년 고찰 — 5학년 한국사 공부와 연결</div></div>
+    </div>
+    <div class="item meal">
+      <div class="time">점심</div>
+      <div class="what"><b>🍴 점심 · <a class="map" href="https://map.naver.com/p/search/%EC%82%BC%EA%B5%90%EB%A6%AC%EB%8F%99%EC%B9%98%EB%AF%B8%EB%A7%89%EA%B5%AD%EC%88%98%20%EC%86%8D%EC%B4%88">삼교리동치미막국수</a></b>
+        <div class="note">막국수 + 수육 · 산나물이 당기면 <a class="map" href="https://map.naver.com/p/search/%EC%84%A4%ED%96%A5%EC%8B%9D%EB%8B%B9%20%EC%86%8D%EC%B4%88">설향식당</a></div></div>
+    </div>
+    <div class="item">
+      <div class="time">오후</div>
+      <div class="what"><b><a class="map" href="https://map.naver.com/p/search/%EC%98%81%EB%9E%91%ED%98%B8">영랑호</a> 자전거 라이딩</b>
+        <div class="note">호수 둘레 약 8km 완만한 길 · 울산바위 전망 · 대여소 자전거 종류는 당일 확인</div></div>
+    </div>
+    <div class="item">
+      <div class="time">오후</div>
+      <div class="what"><b>☕ <a class="map" href="https://map.naver.com/p/search/%EC%B9%A0%EC%84%B1%EC%A1%B0%EC%84%A0%EC%86%8C">칠성조선소</a></b>
+        <div class="note">청초호 쪽이라 영랑호에서 차로 이동 · 옛 조선소를 고친 전시·카페</div></div>
+    </div>
+    <div class="item meal">
+      <div class="time">저녁</div>
+      <div class="what"><b>🍴 저녁 · <a class="map" href="https://map.naver.com/p/search/%EB%8C%80%ED%8F%AC%ED%95%AD">대포항</a></b>
+        <div class="note">가족 좌석 넉넉한 <a class="map" href="https://map.naver.com/p/search/%EB%8C%80%ED%8F%AC%EB%A6%AC%20%EB%8C%80%ED%8F%AC%ED%95%AD">대포리</a> · 조개구이는 <a class="map" href="https://map.naver.com/p/search/%EB%AA%A8%EB%85%80%EA%B0%80%EB%A6%AC%EB%B9%84%20%EC%86%8D%EC%B4%88">모녀가리비</a></div></div>
+    </div>
+  </section>
+
+  <!-- 3일차 -->
+  <section class="day d3">
+    <div class="day-head">3일차 · 10/5 월요일 (대체공휴일) <small>영금정 보고 귀가</small></div>
+    <div class="item">
+      <div class="time">아침</div>
+      <div class="what"><b><a class="map" href="https://map.naver.com/p/search/%EC%86%8D%EC%B4%88%20%EC%98%81%EA%B8%88%EC%A0%95">영금정 해돋이 정자</a> + <a class="map" href="https://map.naver.com/p/search/%EC%86%8D%EC%B4%88%EB%93%B1%EB%8C%80%EC%A0%84%EB%A7%9D%EB%8C%80">속초 등대전망대</a></b>
+        <div class="note">숙소에서 가까운 동명항 · 바다 위 데크길 · 무료</div></div>
+    </div>
+    <div class="item meal">
+      <div class="time">11:00</div>
+      <div class="what"><b>🍴 이른 점심 · <a class="map" href="https://map.naver.com/p/search/%EB%A7%A5%EC%BD%94%EB%A6%AC%EC%95%84%20%EC%86%8D%EC%B4%88">맥코리아 왕돈까스</a></b>
+        <div class="note">아이들 취향 마무리 · 어른 입맛이면 생선구이·솥밥 한상 <a class="map" href="https://map.naver.com/p/search/%EC%88%99%EC%9D%B4%EB%84%A4%20%EC%86%8D%EC%B4%88">숙이네</a></div></div>
+    </div>
+    <div class="item">
+      <div class="time">12시 전</div>
+      <div class="what"><b>속초 출발 → 귀가</b>
+        <div class="note">연휴 마지막 날 — 일찍 떠야 저녁 전 도착</div></div>
+    </div>
+  </section>
+
+  <!-- 준비물 -->
+  <section class="box">
+    <h2>🎒 준비물</h2>
+    <ul>
+      <li>아이들 겉옷 (10월 초 속초 아침저녁 쌀쌀)</li>
+      <li>케이블카·산책용 운동화</li>
+      <li>해변 모래놀이 대비 여벌 옷</li>
+      <li>자전거 탈 때 쓸 얇은 장갑·물병</li>
+    </ul>
+  </section>
+
+  <!-- 출발 전 확인 -->
+  <section class="box warn">
+    <h2>⚠️ 출발 전날 확인할 것 (마리코가 챙깁니다)</h2>
+    <ul>
+      <li>속초아이 대관람차 10/3 운행 여부</li>
+      <li>영랑호 자전거 대여소 운영·어린이용 자전거</li>
+      <li>식당 영업시간·휴무 재확인</li>
+    </ul>
+  </section>
+
+  <footer>2026-10-01 마리코 작성 · 장소 이름을 누르면 네이버 지도가 열립니다 · 요금·영업시간은 검색 시점 기준</footer>
+</div>
+
+</body>
+</html>
